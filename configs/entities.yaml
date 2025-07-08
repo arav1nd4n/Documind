@@ -1,1 +1,12 @@
-# Define extractable entities here
+invoice:
+  required_fields:
+    - vendor
+    - date
+    - total
+  optional_fields:
+    - po_number
+    - tax
+  line_items:
+    - description
+    - quantity
+    - price# Define extractable entities here
