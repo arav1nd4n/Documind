@@ -1,1 +1,10 @@
-# Define validation rules here
+validation_rules:
+  date:
+    format: YYYY-MM-DD
+    max_future_days: 0
+  total:
+    min_value: 0.01
+    max_value: 100000
+  vendor:
+    min_length: 3
+    blocklist: ["TEST", "EXAMPLE"]# Define validation rules here
